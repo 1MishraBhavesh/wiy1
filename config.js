@@ -1,7 +1,8 @@
-import firebase from 'firebase'
+
+  import firebase from 'firebase'
 require('@firebase/firestore')
 
-var firebaseConfig = {
+const firebaseConfig = {
     apiKey: "AIzaSyDpRxX8pLs-KGRAlt0NH_bfxeFwSDbdaxM",
     authDomain: "wily-app-90ed6.firebaseapp.com",
     projectId: "wily-app-90ed6",
@@ -9,12 +10,8 @@ var firebaseConfig = {
     messagingSenderId: "372763404902",
     appId: "1:372763404902:web:bc87ed0a06e04d86925ba7"
   };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-
-  export default firebase.firestore();
-
-
-
-
-  
+ 
+  if (!firebase.apps.length) {
+firebase.initializeApp(firebaseConfig);
+}
+export default firebase.firestore;
