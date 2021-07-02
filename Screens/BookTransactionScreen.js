@@ -195,7 +195,7 @@ const styles=StyleSheet.create(
         scanButton:{
             backgroundColor:"yellow",
             width:50,
-            heigth:40,
+            height:40,
             borderLeftWidth:0,
             
             
